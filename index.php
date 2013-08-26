@@ -1,7 +1,18 @@
 <?php
 
+$appdir = 'application';
+$datadir = 'data' ;
+$sysdir = 'system' ;
+define(APP, $appdir);
+define(DATA, $datadir);
+define(SYS, $sysdir);
 /*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+ * if (file_exists('../install.php'))
+ * {
+ * return include '../install.php' ;
+ * }
  */
+
+// Autoload the application
+require APP.'/autoload.php';
 ?>
